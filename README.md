@@ -10,7 +10,7 @@ Note: See the full [Salt Formulas installation and usage instructions](http://do
 
 ## hbase
 
-Downloads the hbase tarball from the hbase:source__url, installs the package and
+Downloads the hbase tarball from the hbase:source_url, installs the package and
 the hbase service.
 
 Which services hbase ends up running on a given host depends on the roles
