@@ -1,0 +1,18 @@
+{%- from 'hadoop/settings.sls' import hadoop with context %}
+{%- from 'hbase/settings.sls' import hbase with context %}
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>{{ hbase.rootdir }}</value>
+    </property>
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>{{ zookeeper_quorum }}</value>
+    </property>
+</configuration>
